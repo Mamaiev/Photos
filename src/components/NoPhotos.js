@@ -1,10 +1,10 @@
 import React from "react";
 
-const NoImages = () => (
+const NoPhotos = () => (
   <div>
-    <h2>No Images Found</h2>
+    <h2>No Photos Found!</h2>
     <p>Please try a different search term</p>
   </div>
 );
 
-export default NoImages;
+export default NoPhotos;
