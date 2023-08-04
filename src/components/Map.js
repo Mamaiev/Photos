@@ -1,23 +1,29 @@
 import React from "react";
 import {useMemo} from "react";
-import {GoogleMap, Marker} from "@react-google-maps/api";
+import {GoogleMap, Marker, MarkerClusterer} from "@react-google-maps/api";
 
-const Map = props => {
+export default function Map(props) {
     const center = useMemo(() => ({lat: 50.46, lng: 30.54}), []);
     const results = props.data;
 
     return (
         <div id="idMap">
-            <h2>Mapssss2 </h2>
-            <GoogleMap zoom={5} center={center} id={'valera'} mapContainerClassName="map-container">
-                {results.map((photo) => (
-                    <Marker key={photo.id} position={{lat: photo.latitude, lng: photo.longitude}}/>
-                ))}
+            <h2>Photos</h2>
+            <GoogleMap id={'googleMap'}
+                       zoom={5}
+                       center={center}
+                       mapContainerClassName="map-container">
+
+                <MarkerClusterer>
+                    {(clusterer) =>
+                        results.map((photo) => (
+                            <Marker key={photo.id}
+                                    position={{lat: photo.latitude, lng: photo.longitude}}
+                                    clusterer={clusterer}/>
+                        ))
+                    }
+                </MarkerClusterer>
             </GoogleMap>
         </div>
     );
 };
-
-export default Map;
-
-

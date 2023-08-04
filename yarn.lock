@@ -978,6 +978,14 @@
     fast-deep-equal "^3.1.3"
     supercluster "^7.1.3"
 
+"@googlemaps/markerclusterer@latest":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@googlemaps/markerclusterer/-/markerclusterer-2.4.0.tgz#52ede8a186f264468d7100b4c27d2a866956af6f"
+  integrity sha512-yjHrqaaYMzclbPERoCP/6r2w+wJfTCW/+Wblr7eJ4dyQcRFeOxZ8bsdoqvsyj1UbgNt91ly2aiww8h0uDOD6zw==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    supercluster "^8.0.1"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -1569,6 +1577,11 @@
     lodash "^4.17.15"
     semver "^6.3.0"
     tsutils "^3.17.1"
+
+"@ubilabs/google-maps-react-hooks@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@ubilabs/google-maps-react-hooks/-/google-maps-react-hooks-2.0.2.tgz#e9c7b2d570485e7f5fc71a5e8f01868c3106de34"
+  integrity sha512-rKs2p9+G2r/fKRykltcjyx6CTjC7/yLQWPxeiohbaGMX9CSPeH5HiDNko/WwtNd5HPAf5awyVSL7aKhjyw0aUA==
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -6260,6 +6273,11 @@ kdbush@^3.0.0:
   resolved "https://registry.yarnpkg.com/kdbush/-/kdbush-3.0.0.tgz#f8484794d47004cc2d85ed3a79353dbe0abc2bf0"
   integrity sha512-hRkd6/XW4HTsA9vjVpY9tuXJYLSlelnkTmVFu4M9/7MIYQtFcHpbugAU7UbOfjOiVSVYl2fqgBuJ32JUmRo5Ew==
 
+kdbush@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/kdbush/-/kdbush-4.0.2.tgz#2f7b7246328b4657dd122b6c7f025fbc2c868e39"
+  integrity sha512-WbCVYJ27Sz8zi9Q7Q0xHC+05iwkm3Znipc2XTlrnJbsHMYktW4hPhXUE8Ys1engBrvffoSCqbil1JQAa7clRpA==
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -9831,6 +9849,13 @@ supercluster@^7.1.3:
   integrity sha512-EulshI3pGUM66o6ZdH3ReiFcvHpM3vAigyK+vcxdjpJyEbIIrtbmBdY23mGgnI24uXiGFvrGq9Gkum/8U7vJWg==
   dependencies:
     kdbush "^3.0.0"
+
+supercluster@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/supercluster/-/supercluster-8.0.1.tgz#9946ba123538e9e9ab15de472531f604e7372df5"
+  integrity sha512-IiOea5kJ9iqzD2t7QJq/cREyLHTtSmUT6gQsweojg9WH2sYJqZK9SswTu6jrscO6D1G5v5vYZ9ru/eq85lXeZQ==
+  dependencies:
+    kdbush "^4.0.2"
 
 supports-color@^2.0.0:
   version "2.0.0"

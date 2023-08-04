@@ -42,7 +42,7 @@ body {
 
 h2 {
   font-size: 2em;
-  margin: 52px 0 40px;
+  margin: 0px 0 16px;
   text-transform: capitalize;
   color: #051c33;
 }
@@ -236,5 +236,5 @@ input {
 
 .map-container {
   width: 100%;
-  height: 60vh;
+  height: 52em;
 }

@@ -10,7 +10,7 @@ class App extends Component {
             <div>
                 <PhotoContextProvider>
                     <div>
-                        <Header/>
+                        {/*<Header/>*/}
                         <Container/>
                     </div>
                 </PhotoContextProvider>

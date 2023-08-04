@@ -15,7 +15,7 @@ const Container = ({ searchTerm }) => {
     <div className="photo-container">
       {loading ? <Loader /> :
           <div>
-            <Gallery data={photos} />
+            {/*<Gallery data={photos} />*/}
             <Map data={photos}/>
           </div>}
     </div>
