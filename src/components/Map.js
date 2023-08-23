@@ -13,7 +13,7 @@ export default function Map(props) {
                        zoom={5}
                        center={center}
                        mapContainerClassName="map-container">
-
+// TODO: add checking if no internet
                 <MarkerClusterer>
                     {(clusterer) =>
                         results.map((photo) => (
